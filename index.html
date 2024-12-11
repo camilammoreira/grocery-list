@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="shortcut icon" href="./assets/Favcon 48px.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <main class="container">
+        <div class="container__header">
+            <img src="./assets/bag.png" alt="Grocery Bag" class="container__image">
+            <form class="container__form">
+                <input type="text" placeholder="Type the item you want to add" class="input-text">
+                <input type="submit" value="Save Item" class="save-button">
+            </form>
+        </div>
+        <div class="list">
+            <ul>
+                <h2 class="list__title">Grocery List</h2>
+                <hr />
+                <li>
+                    <div class="item">
+                        <div>
+                            <input type="checkbox" name="item" id="item" class="checkbox-input">
+                            <label for="item">
+                                <div class="custom-checkbox checked"></div>
+                                Minas Cheese
+                            </label>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="./assets/delete.svg" alt="Delete">
+                            </button>
+                            <button>
+                                <img src="./assets/edit.svg" alt="edit">
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Monday (31/10/2022) at 08:30</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>
