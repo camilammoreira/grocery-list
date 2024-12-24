@@ -11,7 +11,7 @@
     --text-color: #131730;
     --title-font: "Krona One", sans-serif;
     --text-font: 'Numans', sans-serif;
-    --gradient: linear-gradient(180deg, #000000 0%, #57096c 100%);
+    --gradient: linear-gradient(180deg, #000000 0%, #6c0950 100%);
 }
 
 body {
@@ -63,7 +63,7 @@ body {
 }
 
 .input-text:focus {
-    border: 2px solid var(--main-color);
+    border: 1px solid var(--main-color);
 }
 
 .save-button {
@@ -111,6 +111,11 @@ li {
     justify-content: space-between;
 }
 
+.container-checkbox label{
+    display: flex;
+    gap: .5rem;
+}
+
 .checkbox-input {
     display: none;
 }
@@ -143,10 +148,8 @@ li {
     transform: rotate(-140deg);
 }
 
-.item label {
+.item-name {
     font-size: 1.1rem;
-    display: flex;
-    gap: .5rem;
     cursor: pointer;
 }
 

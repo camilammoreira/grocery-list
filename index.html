@@ -16,41 +16,48 @@
 <body>
     <main class="container">
         <div class="container__header">
-            <img src="./assets/bag.png" alt="Grocery Bag" class="container__image">
+            <img src="./assets/bag.png" alt="Grocery Bag" class="container__image" />
             <form class="container__form">
-                <input type="text" placeholder="Type the item you want to add" class="input-text">
-                <input type="submit" value="Save Item" class="save-button">
+                <input type="text" placeholder="Type the item you want to add" class="input-text" id="input-text" />
+                <input type="submit" value="Save Item" class="save-button" id="save-button" />
             </form>
         </div>
-        <div class="list">
-            <ul>
-                <h2 class="list__title">Grocery List</h2>
-                <hr />
-                <li>
-                    <div class="item">
-                        <div>
-                            <input type="checkbox" name="item" id="item" class="checkbox-input">
-                            <label for="item">
+        <ul id="buy-list">
+            <h2 class="list__title">Grocery List</h2>
+            <hr />
+            <li>
+                <div class="item">
+                    <div>
+                        <div class="container-checkbox">
+                            <label for="checkbox-1">
+                                <input type="checkbox" id="checkbox-1" class="checkbox-input" />
                                 <div class="custom-checkbox checked"></div>
-                                Minas Cheese
+                                <span class="item-name">Minas Cheese</span>
                             </label>
-                        </div>
-                        <div>
-                            <button>
-                                <img src="./assets/delete.svg" alt="Delete">
-                            </button>
-                            <button>
-                                <img src="./assets/edit.svg" alt="edit">
-                            </button>
                         </div>
                     </div>
                     <div>
-                        <span>Monday (31/10/2022) at 08:30</span>
+                        <button class="item-button">
+                            <img src="./assets/delete.svg" alt="Delete" />
+                        </button class="item-button">
+                        <button class="item-button">
+                            <img src="./assets/edit.svg" alt="edit" />
+                        </button>
                     </div>
-                </li>
-            </ul>
-        </div>
+                </div>
+                <div>
+                    <span id="item-date">Monday (31/10/2022) at 08:30</span>
+                </div>
+            </li>
+        </ul>
+
+        <h2 class="list__title">Purchased</h2>
+        <hr />
+        <ul id="purchased-list">
+
+        </ul>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
