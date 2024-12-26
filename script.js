@@ -35,12 +35,14 @@ function addItem(event) {
     checkboxLabel.addEventListener('click', (event) => {
             const checkboxInput = event.currentTarget.querySelector('.checkbox-input');
             const customCheckbox = event.currentTarget.querySelector('.custom-checkbox');
-
+            const itemTitle = event.currentTarget.closest('li').querySelector('#item-title');
             if (checkboxInput.checked) {
                 customCheckbox.classList.add('checked');
+                itemTitle.style.textDecoration = 'line-through';
                 purchasedList.appendChild(listItem);
             } else {
                 customCheckbox.classList.remove('checked');
+                itemTitle.style.textDecoration = 'none';
                 buyList.appendChild(listItem);
                 
             }
@@ -54,6 +56,7 @@ function addItem(event) {
 
     // Item name
     const itemName = document.createElement('span');
+    itemName.id = 'item-title';
     itemName.classList.add('item-name');
     itemName.innerText = item.value;
     checkboxLabel.appendChild(itemName);
