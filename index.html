@@ -25,39 +25,19 @@
         <ul id="buy-list">
             <h2 class="list__title">Grocery List</h2>
             <hr />
-            <li>
-                <div class="item">
-                    <div>
-                        <div class="container-checkbox">
-                            <label for="checkbox-1">
-                                <input type="checkbox" id="checkbox" class="checkbox-input" />
-                                <div class="custom-checkbox checked"></div>
-                                <span class="item-name">Minas Cheese</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div>
-                        <button class="item-button">
-                            <img src="./assets/delete.svg" alt="Delete" />
-                        </button class="item-button">
-                        <button class="item-button">
-                            <img src="./assets/edit.svg" alt="edit" />
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <span id="item-date">Monday (31/10/2022) at 08:30</span>
-                </div>
-            </li>
+            <p id="empty-list" style="display: block;">Your list is epty.</p>
+
         </ul>
 
-        <h2 class="list__title">Purchased</h2>
-        <hr />
         <ul id="purchased-list">
+            <div id="purchased-list-title" style="display: none;">
+                <h2 class="list__title">Purchased</h2>
+                <hr />
+            </div>
 
         </ul>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>

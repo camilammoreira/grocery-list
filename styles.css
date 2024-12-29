@@ -91,6 +91,7 @@ body {
     font-weight: 400;
     font-size: 1.25rem;
     color: var(--main-color);
+    margin-top: 1rem;
 }
 
 hr {
@@ -162,6 +163,8 @@ li {
     cursor: pointer;
 }
 
-span {
-font-size: .8rem;
+.item-date {
+    font-size: .8rem;
+    display: block;
+
 }
