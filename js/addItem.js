@@ -16,5 +16,5 @@ export function addItem(event) {
 
     const listItem = createListItem(item.value);
     verifyEmptyList(buyList);
-    
+    item.value = "";
 }
