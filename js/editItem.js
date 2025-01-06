@@ -1,5 +1,7 @@
 export const editItem = (element) => {
-    let newItemName = prompt("Insert the new item's name");
+    const listItem = element.closest('li').querySelector('.item-name');
+    const itemName = listItem.textContent.trim();
+    let newItemName = prompt("Insert the new item's name", itemName);
 
     if (newItemName !== null && newItemName.trim() !== ""){
         const itemUpdatedText = element.querySelector("#item-title");

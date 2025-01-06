@@ -64,6 +64,7 @@ export function createListItem(item) {
 
     // Del button
     const containerButton = document.createElement('div');
+    containerButton.classList.add('container-button');
     const buttonDel = document.createElement('button');
     buttonDel.classList.add('item-button');
 

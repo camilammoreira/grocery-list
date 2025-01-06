@@ -1,5 +1,4 @@
 import { createListItem } from "./createListItem.js";
-import { dateText } from "./dateText.js";
 import { verifyEmptyList } from "./verifyEmptyList.js";
 
 const buyList = document.getElementById('buy-list');
@@ -14,7 +13,7 @@ export function addItem(event) {
         return;
     }
 
-    const listItem = createListItem(item.value);
+    createListItem(item.value);
     verifyEmptyList(buyList);
     item.value = "";
 }
