@@ -10,7 +10,7 @@ A aplicação permite inserir itens em uma lista de forma dinâmica, permitindo 
 
 The application allows to dynamically insert, delete and edit itens into a list. The itens will have the name and also the date and time they were created. Also, it is possible to mark an item as checked to inform the it has been purchased.
 
-![Inserção no campo de digitação do valor ração de gato, após, é clicado no botão de edição, onde é aberto um popup para digitar o novo do nome item, que foi digitado ração de cachorro. Em seguida, é clicado no botão de exclusão, e o item é excluído.](https://imgur.com/isPj7Xf.gif)
+![Inserção no campo de digitação do valor Rice, após, é clicado no botão de edição, onde é aberto um popup para digitar o novo do nome item, que foi digitado Beans. Em seguida, é clicado no botão de exclusão, e o item é excluído.](./assets/screen-capture.gif)
 
 ## ✔️ Técnicas e tecnologias utilizadas | Techniques and technologies
 
