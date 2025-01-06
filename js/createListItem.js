@@ -1,5 +1,6 @@
 import { dateText } from "./dateText.js";
 import { deleteItem } from "./deleteItem.js";
+import { editItem } from "./editItem.js";
 import { verifyPurchasedList } from "./verifyPurchasedList.js";
 
 let counter = 0;
@@ -84,6 +85,11 @@ export function createListItem(item) {
     const imgEdit = document.createElement('img');
     imgEdit.src = 'assets/edit.svg';
     imgEdit.alt = 'Edit';
+
+    buttonEdit.addEventListener('click', function () {
+        editItem(listItem);
+        dateText(itemDate);
+    })
 
     buttonEdit.appendChild(imgEdit);
     containerButton.appendChild(buttonEdit);

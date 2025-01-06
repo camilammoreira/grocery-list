@@ -9,6 +9,11 @@ const item = document.getElementById('input-text');
 export function addItem(event) {
     event.preventDefault();
 
+    if (item.value === "") {
+        alert("Invalid item");
+        return;
+    }
+
     const listItem = createListItem(item.value);
     verifyEmptyList(buyList);
     
