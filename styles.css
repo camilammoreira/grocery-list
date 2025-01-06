@@ -5,18 +5,18 @@
 }
 
 :root {
-    --main-color: #F55B64;
-    --secondary-color: #C2373F;
+    --main-color: #85A947;
+    --secondary-color: #3E7B27;
     --neutral: #F9F9F9;
-    --text-color: #131730;
-    --title-font: "Krona One", sans-serif;
+    --text-color: #123524;
+    --title-font: "DM Serif Text", sans-serif;
     --text-font: 'Numans', sans-serif;
-    --gradient: linear-gradient(180deg, #000000 0%, #6c0950 100%);
+    --background: #EFE3C2;
 }
 
 body {
     height: 100vh;
-    background: var(--gradient);
+    background: var(--background);
     background-attachment: fixed;
     backdrop-filter: blur(20px);
     font-family: var(--text-font);
@@ -27,10 +27,11 @@ body {
 .container {
     background-color: var(--neutral);
     margin: 3rem auto;
-    padding: 4rem;
+    padding: 2.5rem;
     min-width: 328px;
-    max-width: 440px;
+    max-width: 350px;
     border-radius: 16px;
+    box-shadow: 0px 0px 10px 0px #00000036;
 }
 
 .container__header {
@@ -51,11 +52,11 @@ body {
     border: 1px solid var(--text-color);
     border-radius: 24px;
     padding: .6rem 1rem;
-    margin: 2rem 0 .5rem 0;
-    
+    margin: 1rem 0 .5rem 0;
+
     font-family: 'Montserrat', sans-serif;
     color: var(--main-color);
-    
+
     outline: none;
 }
 
@@ -81,7 +82,7 @@ body {
     cursor: pointer;
 }
 
-.save-button:active {
+.save-button:hover {
     background: var(--secondary-color);
 }
 
@@ -89,18 +90,20 @@ body {
     font-family: var(--title-font);
     font-style: normal;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--main-color);
     margin-top: 1rem;
 }
 
 hr {
-    margin: .7rem 0;
+    margin: .5rem 0;
     border: 1px dashed var(--main-color);
 }
 
 li {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    padding: 0.5rem;
+    border-radius: 5px;
 
     display: flex;
     flex-direction: column;
@@ -109,12 +112,16 @@ li {
     list-style: none;
 }
 
+li:hover {
+    background: var(--background);
+}
+
 .item {
     display: flex;
     justify-content: space-between;
 }
 
-.container-checkbox label{
+.container-checkbox label {
     display: flex;
     gap: .5rem;
 }
@@ -124,7 +131,7 @@ li {
 }
 
 .custom-checkbox {
-    width: 20px;
+    min-width: 20px;
     height: 20px;
     background-color: transparent;
     border: 2px solid var(--text-color);
@@ -154,6 +161,10 @@ li {
 .item-name {
     font-size: 1.1rem;
     cursor: pointer;
+}
+
+.container-button {
+    min-width: fit-content;
 }
 
 .item button {
