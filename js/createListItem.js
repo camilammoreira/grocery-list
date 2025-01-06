@@ -1,4 +1,5 @@
 import { dateText } from "./dateText.js";
+import { deleteItem } from "./deleteItem.js";
 import { verifyPurchasedList } from "./verifyPurchasedList.js";
 
 let counter = 0;
@@ -69,6 +70,10 @@ export function createListItem(item) {
     imgDel.src = 'assets/delete.svg';
     imgDel.alt = 'Delete';
 
+    buttonDel.addEventListener('click', function() {
+        deleteItem(listItem);
+    });
+
     buttonDel.appendChild(imgDel);
     containerButton.appendChild(buttonDel);
 
@@ -87,7 +92,9 @@ export function createListItem(item) {
     const containerItemDate = document.createElement('div');
     const itemDate = document.createElement('span');
     itemDate.classList.add('item-date');
+    
     dateText(itemDate);
+    
     containerItemDate.appendChild(itemDate);
 
 
